@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require('express'); //inporta o express
 const app = express();
 
 app.get("/",  (req, res) =>{
@@ -6,8 +6,8 @@ app.get("/",  (req, res) =>{
 });
 
 
-app.get("/home", (req , res )=>{
-res.send("olá " )
+app.get("/", (req , res )=>{
+res.render("views");
 })
 
 app.listen(3000);
