@@ -37,7 +37,7 @@ const guitars = [
 
 
 
-
+//rotas
 
 app.get("/", (req, res) => {
   res.render('index',{guitars});
