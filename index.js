@@ -12,7 +12,7 @@ const guitars = [
          
         imagem: "http://www.tagima.com.br/uploads/produtos/truerange7_g1.jpg",
 
-      },
+      }
 
          ] 
 
@@ -21,7 +21,7 @@ const guitars = [
 
 app.set("view engine", "ejs")
 
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   res.render('index',{guitars});
 });
 

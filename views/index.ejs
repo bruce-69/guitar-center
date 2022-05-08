@@ -10,15 +10,21 @@
 </head>
 
 <body>
+    <h1>guitars store</h1>
     <section>
-  <% guitars.forEach((guitar_modelos )=> { %>
-   <div>
-    <img src="<%=guitars.imagem%>" alt="">
-     
 
+
+  <% guitars.forEach((guitars ) => { %>
+   <div>
+    <img src="<%= guitars.imagem %>" alt="">
+     <h2> <%= guitars.id %></h2>
+
+     <p>madeiras <%= guitars.madeiras %></p>
+
+     <p> captadores <%= guitars.captadores %></p>
 
    </div>
-  <%}) %>
+  <% }) %>
 
 
     </section>
