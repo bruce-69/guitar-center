@@ -1,29 +1,28 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>rota2 </title>
+    <title>guitar store </title>
+
+
 </head>
+
 <body>
-    <h1>guitar store</h1>
-       <section>
-          <%guitars.forEach((guitarras ) => { %>
-          
-           <div>   
-            <img src=" <%=guitarras.imagen%>" alt="">
-            <h2><%= guitarras.id%></h2>
-             <p><%</p>
-              <p></p>
-    
-           </div>
-       <% })%>
-       </section>
+    <section>
+  <% guitars.forEach((guitar_modelos )=> { %>
+   <div>
+    <img src="<%=guitars.imagem%>" alt="">
+     
 
 
+   </div>
+  <%}) %>
+
+
+    </section>
 
 </body>
-</html>
 
+</html>
