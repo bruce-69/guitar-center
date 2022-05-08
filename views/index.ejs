@@ -24,6 +24,7 @@
   <% guitars.forEach((guitars ) => { %>
    <div class = "card">
     <img src="<%= guitars.imagem %>" alt="">
+
      <h2> <%= guitars.id %></h2>
 
      <p>madeiras <%= guitars.madeiras %></p>
@@ -33,7 +34,39 @@
    </div>
   <% }) %>
 
-    </section>
+  </section >
+
+   <section id="cadastro">
+    <h2>cadastro</h2>
+     
+    <form action="">
+
+      <label for="id">modelo</label>
+      <input type="text" id="guitarra" guitarra="guitarra">
+
+
+      <label for="madeiras">madeiras</label>
+      <input type="text" id="madeiras" madeiras="madeiras">
+
+      <label for="captadores">captadores</label>
+      <input type="text" id="captadores" captadores="captadores">
+
+    <label for="imagem">link da imagem</label>
+    <input type="text" id="imagem"  nome="imagem">
+
+     <button>nova guitarra </button>
+    </form>
+
+   </section>
+
+    
+
+   
+
+  
+
+
+
  <main>
 
 
