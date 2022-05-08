@@ -10,12 +10,19 @@
 </head>
 
 <body>
-    <h1>guitars store</h1>
-    <section>
+   <header>
+    <h1>guitar store </h1>
 
+
+
+   </header>
+
+
+    <main>    
+    <section id='guitarsc'>  
 
   <% guitars.forEach((guitars ) => { %>
-   <div>
+   <div class = "card">
     <img src="<%= guitars.imagem %>" alt="">
      <h2> <%= guitars.id %></h2>
 
@@ -26,8 +33,11 @@
    </div>
   <% }) %>
 
-
     </section>
+ <main>
+
+
+
 
 </body>
 
