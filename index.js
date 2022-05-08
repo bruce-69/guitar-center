@@ -1,5 +1,5 @@
 const express = require("express");
-const path = require("path")
+const path = require("path");
 const app = express();
 
 
@@ -18,9 +18,9 @@ const guitars = [
          
         imagem: "http://www.tagima.com.br/uploads/produtos/truerange7_g1.jpg",
 
-      }
+      },
 
-         ] 
+         ]
 
 
 
