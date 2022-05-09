@@ -5,7 +5,7 @@ const app = express();
 
 app.set("view engine", "ejs")
 app.use(express.static(path.join(__dirname, "public")));
-
+app.use(express.urlencoded());
 
 const guitars = [
    
@@ -46,3 +46,14 @@ app.get("/", (req, res) => {
 
 
 app.listen(3000);
+
+app.post("/add", (req, res)=>{
+
+const cadastro = req.body;
+guitars.id = guitars.length + 1;
+
+guitars.push(guitars)
+
+res.redirect("/");
+});
+

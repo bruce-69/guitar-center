@@ -19,10 +19,11 @@
 
 
     <main>    
-    <section id='guitarsc'>  
+    <section id="cards">  
 
-  <% guitars.forEach((guitars ) => { %>
-   <div class = "card">
+  <% guitars.forEach((guitars )=> { %>
+   <div class = "cards">
+
     <img src="<%= guitars.imagem %>" alt="">
 
      <h2> <%= guitars.id %></h2>
@@ -30,14 +31,15 @@
      <p>madeiras <%= guitars.madeiras %></p>
 
      <p> captadores <%= guitars.captadores %></p>
-
    </div>
   <% }) %>
 
   </section >
 
-   <section id="cadastro">
-    <h2>cadastro</h2>
+
+
+   <section id="cadastro"> 
+    <h2>cadastro new guitar </h2>
      
     <form action="/add" method="POST">
 
@@ -74,4 +76,4 @@
 
 </body>
 
-</html>
+</html>  
