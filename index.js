@@ -56,5 +56,3 @@ guitars.push(cadastro)
 
 res.redirect("/");
 });
-
-
