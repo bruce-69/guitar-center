@@ -50,10 +50,11 @@ app.listen(3000);
 app.post("/add", (req, res)=>{
 
 const cadastro = req.body;
-guitars.id = guitars.length + 1;
+cadastro.id = guitars.length + 1;
 
-guitars.push(guitars)
+guitars.push(cadastro)
 
 res.redirect("/");
 });
+
 
